@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+class sample
+{
+    public:
+   void func();
+   void func2();
+};
+ 
+class sample2 :sample
+{
+    func();
+};
+void sample::func()
+{
+    cout<<"this is function\n";
+}
+void sample::func2()
+{
+    cout<<"this is function2 ";
+}
+int main()
+{
+    sample a;
+    a.func();
+    a.func2();
+    return 0;
+}
