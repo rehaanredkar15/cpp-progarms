@@ -1,0 +1,32 @@
+#include<iostream>
+using namespace std;
+class function
+{
+   public:
+    void fun1()
+    {
+        cout<<"this is first function\n";
+    }
+    void fun1(int a)
+    {
+        cout<<"this is 1 parameter function\n";
+    }
+      void fun1(int a,int b)
+    {
+        cout<<"this is 2 parameter function\n";
+    }
+      void fun1(int a,int b,int c)
+    {
+        cout<<"this is 3 parameter function\n";
+    }
+};
+int main()
+ {
+    function s1;
+    int a,b,c;
+    s1.fun1();
+    s1.fun1(a);
+    s1.fun1(a,b);
+    s1.fun1(a,b,c);
+    return 0;
+}
