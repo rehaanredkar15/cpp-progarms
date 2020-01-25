@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+class addition
+{
+    public:
+    int i,a[50],s=0;
+    void add(int n)
+    {
+     for(i=0;i<n;i++)
+     {
+        cin>>a[i];
+     }
+     i=0;
+     for(i=0;i<n;i++)
+     {
+         s=s+a[i];
+     }
+     cout<<"the additions is "<<s;
+    }
+};
+int main()
+{
+    int n;
+    cout<<"enter the no of elements in array: ";
+    cin>>n;
+    addition s1;
+    s1.add(n);
+    return 0;
+}
