@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+class samp
+{
+    int i=20;
+    public:
+    friend void fun();
+};
+void fun()
+{
+    samp frn;
+    frn.i;
+    cout<<frn.i;
+}
+int main()
+{
+      fun();
+}
