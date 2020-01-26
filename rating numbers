@@ -1,0 +1,44 @@
+#include<iostream>
+using namespace std;
+class ratings
+{
+      public:
+      int i;
+      int cot=0,bob=0;
+      int ali(int a[],int b[])
+      {
+          for(i=0;i<3;i++)
+          {
+              cin>>a[i];
+          }
+          for(i=0;i<3;i++)
+          {
+              cin>>b[i];
+          }
+      for(i=0;i<3;i++)
+  {
+       if(a[i] > b[i])
+        {
+          cot++;
+         }
+      else
+      {
+          bob++;
+          }
+
+         if(a[i] == b[i])
+      {
+          break;
+      }
+    }
+     cout<<cot<<" "<<bob;
+     return 0;
+      }
+};
+int main()
+{
+    int a[1000],b[1000];
+    ratings a1;
+    a1.ali(a,b);
+    return 0;
+}
