@@ -1,0 +1,31 @@
+#include<iostream>
+using namespace std;
+class ratings
+{
+      public:
+      int i;
+      long long int s;
+      int ali(long long int a[],int b)
+      {
+          s=0;
+          for(i=0;i<b;i++)
+          {
+              cin>>a[i];
+          }
+          for(i=0;i<b;i++)
+          {
+              s=s+a[i];
+          }
+          cout<<s;
+     return 0;
+      }
+};
+int main()
+{
+    long long int a[1000];
+    int b;
+    cin>>b;
+    ratings a1;
+    a1.ali(a,b);
+    return 0;
+}
