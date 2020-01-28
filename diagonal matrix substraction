@@ -1,0 +1,62 @@
+#include<iostream>
+using namespace std;
+class ratings
+{
+      public:
+      int i,j,g;
+      long int s=0,d=0;
+      int ali(int a[100][100])
+      {
+          int b;
+          cin>>b;
+          s=0;
+          for(i=0;i<b;i++)
+          {
+               for(j=0;j<b;j++)
+               {
+                  cin>>a[i][j];
+                }
+          }
+
+         for(i=0;i<b;i++)
+        {
+           for(j=0;j<b;j++)
+           {
+              if((i+j) == (b-1))
+             {
+                 d=d+a[i][j];
+             }
+         }
+       }
+
+       for(i=0;i<b;i++)
+        {
+           for(j=0;j<b;j++)
+           {
+             if(i == j)
+             {
+                s=s+a[i][j];
+             }
+           }
+        }
+          g=d-s;
+          //cout<<d<<"\n"<<s;//<<"\n"<<s<<"\n"<<g;
+          if(g<0)
+          {
+             g *= -1;
+              cout<<g;
+           }
+          else
+            {
+               cout<<g;
+            }
+         return 0;
+      }
+};
+int main()
+{
+    int a[100][100];
+    ratings a1;
+    a1.ali(a);
+    return 0;
+}
