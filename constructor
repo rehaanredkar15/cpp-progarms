@@ -1,0 +1,21 @@
+#include<iostream>
+using namespace std;
+class con
+{
+   public:
+   con(int a, char b)
+   {
+      cout<<a<<"\n"<<b;
+    }
+   con(int a)
+   {
+     cout<<"this is constructor"<<a;
+   }
+   
+};
+int main()
+{
+  con obj(6,'v');
+  con obj2(7);
+ return 0;
+}
