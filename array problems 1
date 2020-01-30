@@ -1,0 +1,45 @@
+#include<iostream>
+using namespace std;
+class u
+{
+public:
+    int i;
+    long double g,p=0,n,z,s,o,u;
+
+    void arr(int a[1000])
+    {
+        n=0;
+        z=0;
+        cin>>s;
+        for(i=0;i<s;i++)
+        {
+            cin>>a[i];
+          //  cout<<a[i]<<"\t";
+            if( a[i] > 0)
+            {
+                p++;
+            }
+            else if( a[i] < 0)
+            {
+                n++;
+            }
+            else
+            {
+                z++;
+            }
+        }
+        g = p/s;
+        o = n/s;
+        u = z/s;
+        cout<<endl<<fixed<<g<<endl<<o<<endl<<u;
+    }
+
+
+};
+int main()
+{
+    int a[1000];
+    u obj;
+    obj.arr(a);
+    return 0;
+}
