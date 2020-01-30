@@ -1,0 +1,35 @@
+#include<iostream>
+using namespace std;
+class pattern
+{
+public:
+    void fun(int s);
+};
+void pattern :: fun(int s)
+{
+    int i,j;
+    for(i=1;i<=s;i++)
+    {
+        for(j=1;j<=s;j++)
+        {
+            if(j>=(s+1)-i)
+            {
+                cout<<"*";
+            }
+            else
+            {
+                cout<<" ";
+            }
+
+        }
+        cout<<endl;
+     }
+}
+int main()
+{
+     int s;
+     cin>>s;
+     pattern obj;
+     obj.fun(s);
+     return 0;
+}
