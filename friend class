@@ -1,0 +1,29 @@
+#include<iostream>
+
+using namespace std;
+
+class a
+{
+    int i;
+   public:
+    void add()
+    {
+        i=0;
+    }
+        friend class b;
+};
+class b:a
+{
+public:
+    void ad()
+    {
+        cin>>i;
+        cout<<i;
+    }
+};
+int main()
+{
+    b obj;
+    obj.ad();
+    return 0;
+}
