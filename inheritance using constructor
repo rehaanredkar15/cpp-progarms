@@ -1,0 +1,42 @@
+#include<iostream>
+using namespace std;
+class a
+{
+      int i;
+    public:
+    int x;
+    void add()
+    {
+       cout<<"enter the no to add :";
+       cin>>i;
+       x = i;
+    }
+};
+class b
+{   int j;
+     public:
+   int y;
+     void add2()
+     {
+         cout<<"enter the second no to add";
+         cin>>j;
+         y=j;
+     }
+};
+class c : b ,a
+{
+    public:
+    int v;
+    c()
+    {
+        add();
+        add2();
+        v = x+y;
+        cout<<v;
+    }
+};
+int main()
+{
+    c obj1;
+    return 0;
+}
