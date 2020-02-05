@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+class hello
+{  
+public:
+   hello()
+  {
+   cout<<endl<<"constructor";
+   }
+  ~hello()
+  {
+   cout<<endl<<"destructor";
+  }
+  void display()
+    { 
+	cout<<endl<<"hello world";
+	}
+};
+int main()
+{
+   hello obj1;
+    obj1.display();
+   hello obj2;
+    return 0; 
+ }
