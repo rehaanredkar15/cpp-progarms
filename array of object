@@ -1,0 +1,45 @@
+#include<iostream>
+#include<string>
+using namespace std;
+class stat
+{
+
+   public:  
+    int m;
+   string n;
+   void name()
+  {
+     
+     cin>>n;
+    }
+   void marks()
+   {
+ 	cin>>m;
+        
+   }
+  void display()
+   {
+      
+       cout<<"the name of student is "<< n<<endl;
+       cout<<"the marks are "<<m<<endl;
+   }
+};
+
+int main()
+{  int i;
+      stat a[10];
+     for(i=0;i<2;i++)
+      {
+            cout<<"enter the students name"<<endl;
+             a[i].name();
+           cout<<"enter the marks"<<endl;
+            a[i].marks();
+           
+       }
+         for(i=0;i<2;i++)
+      {
+         a[i].display();
+      }
+   
+      return 0;
+}
