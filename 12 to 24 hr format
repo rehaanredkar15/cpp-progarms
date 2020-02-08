@@ -13,13 +13,17 @@ int main()
     {
         cout<<to_string(hr);
     }
-    if((s[8]=='P' || s[8]=='p') &&( s[9]=='M' || s[9]=='m') )
+   else if((s[8]=='P' || s[8]=='p') &&( s[9]=='M' || s[9]=='m') )
     {
         cout<<to_string(hr+12);
     }
-    if((s[8]=='A' || s[8]=='a') &&( s[9]=='M' || s[9]=='m') && hr == 12 )
+    else if((s[8]=='A' || s[8]=='a') &&( s[9]=='M' || s[9]=='m') && hr == 12 )
     {
         cout<<"00";
+    }
+    else
+    {
+        cout<<s[0]<<s[1];
     }
     for(i=2;i<=9;i++)
     {
@@ -28,3 +32,4 @@ int main()
 
     return 0;
 }
+
