@@ -1,0 +1,30 @@
+#include<iostream>
+#include<string.h>
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int i;
+    string s;
+    cin>>s;
+    int hr;
+    hr = ((s[0]-'0')*10)+(s[1]-'0');
+    if((s[8]=='P' || s[8]=='p') &&( s[9]=='M' || s[9]=='m') && hr == 12 )
+    {
+        cout<<to_string(hr);
+    }
+    if((s[8]=='P' || s[8]=='p') &&( s[9]=='M' || s[9]=='m') )
+    {
+        cout<<to_string(hr+12);
+    }
+    if((s[8]=='A' || s[8]=='a') &&( s[9]=='M' || s[9]=='m') && hr == 12 )
+    {
+        cout<<"00";
+    }
+    for(i=2;i<=9;i++)
+    {
+         cout<<s[i];
+    }
+
+    return 0;
+}
