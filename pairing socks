@@ -1,0 +1,33 @@
+#include<iostream>
+using namespace std;
+class jon
+{
+public:
+    void inp()
+    {
+        int i,c=0;
+        int resi;
+        resi=0;
+        int a[100]={};
+         int n;
+         cin>>n;
+        for(i=0;i<n;i++)
+        {
+             cin>>c;
+              a[c]++;
+        }
+
+        for(i=0;i<100;i++)
+        {
+            resi = resi + a[i]/2;
+
+        }
+        cout<<resi<<endl;
+    }
+};
+int main()
+{
+    jon o;
+    o.inp();
+    return 0;
+}
