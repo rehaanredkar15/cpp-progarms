@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+
+class Test
+{
+   private:
+      int count=0,count1=0;
+      string  s,a,c;
+   public:
+                            
+       void operator +() 
+       { 
+         
+          count = count+1; 
+          count1 = count1 -2;
+        cout<<"enter a string:"<<endl;
+          cin>>s;
+          cout<<"enter the secong string "<<endl;
+          cin>>a;
+          c = s + a;
+	cout<<c;
+       }
+       void Display() 
+        {  
+               cout<<endl<<"Count: "<<count<<endl<<count1;
+        }
+      
+};
+
+int main()
+{
+    Test t;
+    +t;   
+    t.Display();
+    return 0;
+}
