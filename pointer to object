@@ -1,0 +1,30 @@
+#include<iostream>
+using namespace std;
+class emp
+{
+  int id;
+    char name[10];
+  public:
+    void get()
+    {
+      cout<<"enter the employer name";
+      cin>>name;
+      cout<<"enter the id:";
+      cin>>id;
+    }
+    void show()
+     {
+       cout<<name<<endl;
+       cout<<id<<endl;
+      }
+};
+int main()
+{
+   int i;
+   emp o;
+    emp *ptr;
+   ptr = &o;
+   ptr -> get();
+   ptr -> show();
+return 0;
+}
