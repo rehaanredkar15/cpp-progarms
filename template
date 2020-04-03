@@ -1,0 +1,30 @@
+#include<iostream>
+using namespace std;
+template<class x>
+x void fun(x &a,x &b)
+{
+   x temp;
+   temp = a;
+   a = b;
+   b = temp;
+   cout<<"this is a fucntion  with template ";
+   cout<<endl<<"a ="<<a<<endl<<"b = "<<b<<endl;
+}
+/*int fun(int a,int b)
+{ 
+  int temp;
+   temp = a;
+    a = b;
+   b = temp;
+   cout<<"this is a fucntion accepting integer values without template ";
+   cout<<endl<<"a ="<<a<<endl<<"b = "<<b<<endl;
+}*/
+int main()
+{
+  int i = 10,j = 20;
+  char a = 'a', b = 'b';
+  double h = 10.12,l = 23.1;
+  fun(i,j);
+  fun(a,b);
+  fun(h,l);
+ }
