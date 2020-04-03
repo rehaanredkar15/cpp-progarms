@@ -1,0 +1,12 @@
+#include<iostream>
+using namespace std;
+template<class x,class y>
+void fun(x a,y b)
+{
+   cout<<"this is a fucntion  with template ";
+   cout<<endl<<"a ="<<a<<endl<<"b = "<<b<<endl;
+}
+int main()
+{
+  fun(20,'j');
+ }
